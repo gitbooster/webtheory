@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Создать сообщество</title>
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="icon" type="image/png" href="static/img/favicon.png">
+    <meta name="description" content="webtheory - проект, посвященный бесплатному онлайн образованию в сфере веб-разработок и веб-дизайна.">
+    <meta name="keywords" content="webtheory,веб-разработка,веб-дизайн,образование,курсы,онлайн,бесплатно">
+    <noscript><meta http-equiv="refresh" content="0; URL=badbrowser.html"></noscript>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1><a href="index.html"><span class="logo"></span></a></h1>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="landing.html">Знакомство</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li><a href="graphics.html">Графика</a></li>
+                    <li><a href="people.html">Люди</a></li>
+                    <li class="active"><a href="hubs.html">Сообщества</a></li>
+                </ul>
+                <ul class="header-nav-right">
+                    <li><a href="landing.html#invite">Получить приглашение</a></li>
+                    <li><a href="landing.html#auth">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="subnav">
+        <div class="wrapper">
+            <div class="subwrapper">
+                <ul id="category-switcher">
+                    <li><a href="hubs.html">Все сообщества</a></li>
+                    <li><a href="hubs_create.html" class="active">Создать сообщество</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div id="content">
+            <form action="#" method="POST" enctype="multipart/form-data" class="hub-create">
+                <h3>Создание сообщества</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="title">Название сообщества</div>
+                            <div class="desc">Максимально короткое название, точно характеризующее деятельность сообщества</div>
+                        </td>
+                        <td>
+                            <input type="text" name="title">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="title">Адрес сообщества</div>
+                            <div class="desc">
+                                С помощью этого адреса можно будет попасть на страницу сообщества.
+                                <br><b>Пример:</b> webtheory.official
+                            </div>
+                        </td>
+                        <td>
+                            <div class="hub-address"><!-- add "incorrect" class if the address's taken -->
+                                <input type="text" name="address">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="title">Категория</div>
+                            <div class="desc">Выберите пункт, который больше всего подходит для вашего сообщества</div>
+                        </td>
+                        <td>
+                            <div class="js_stylization__select" id='category'>
+                                <select name="cat" id="cat_select">
+                                    <option invisible disabled selected value="">Категория:</option>
+                                    <option name="cat__1" value="1">Веб-сайт</option>
+                                    <option name="cat__2" value="2">Клуб</option>
+                                    <option name="cat__3" value="3">Дизайн</option>
+                                    <option name="cat__4" value="4">Программирование</option>
+                                    <option name="cat__5" value="5">Творчество</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="title">Дата основания</div>
+                            <div class="desc"> Выберите, когда вы основали свое сообщество / сайт </div>
+                        </td>
+                        <td class="hub-date-sels">
+                            <div class="js_stylization__select" id='hub-date__day'>
+                                <select name="hub-date__day">
+                                    <option value="01" name="day_1">1</option>
+                                    <option value="02" name="day_2">2</option>
+                                    <option value="03" name="day_3">3</option>
+                                    <option value="04" name="day_4">4</option>
+                                    <option value="05" name="day_5">5</option>
+                                    <option value="06" name="day_6">6</option>
+                                    <option value="07" name="day_7">7</option>
+                                    <option value="08" name="day_8">8</option>
+                                    <option value="09" name="day_9">9</option>
+                                    <option value="10" name="day_10">10</option>
+                                    <option value="11" name="day_11">11</option>
+                                    <option value="12" name="day_12">12</option>
+                                    <option value="13" name="day_13">13</option>
+                                    <option value="14" name="day_14">14</option>
+                                    <option value="15" name="day_15">15</option>
+                                    <option value="16" name="day_16">16</option>
+                                    <option value="17" name="day_17">17</option>
+                                    <option value="18" name="day_18">18</option>
+                                    <option value="19" name="day_19">19</option>
+                                    <option value="20" name="day_20">20</option>
+                                    <option value="21" name="day_21">21</option>
+                                    <option value="22" name="day_22">22</option>
+                                    <option value="23" name="day_23">23</option>
+                                    <option value="24" name="day_24">24</option>
+                                    <option value="25" name="day_25">25</option>
+                                    <option value="26" name="day_26">26</option>
+                                    <option value="27" name="day_27">27</option>
+                                    <option value="28" name="day_28">28</option>
+                                    <option value="29" selected name="day_29">29</option>
+                                    <option value="30" name="day_30">30</option>
+                                    <option value="31" name="day_31">31</option>
+                                </select>
+                            </div>
+                            <div class="js_stylization__select" id='hub-date__month'>
+                                <select name="hub-date__month">
+                                    <option value="1" name="month_1">Январь</option>
+                                    <option value="2" name="month_2">Февраль</option>
+                                    <option value="3" name="month_3">Март</option>
+                                    <option value="4" name="month_4">Апрель</option>
+                                    <option value="5" name="month_5">Май</option>
+                                    <option value="6" name="month_6">Июнь</option>
+                                    <option value="7" name="month_7">Июль</option>
+                                    <option value="8" name="month_8">Август</option>
+                                    <option value="9" name="month_9">Сентябрь</option>
+                                    <option value="10" name="month_10">Октябрь</option>
+                                    <option value="11" name="month_11">Ноябрь</option>
+                                    <option value="12" name="month_12">Декабрь</option>
+                                </select>
+                            </div>
+                            <div class="js_stylization__select" id='hub-date__year'>
+                                <select name="hub-date__year">
+                                    <option value="1999" name="year_1999">1999</option>
+                                    <option value="2000" name="year_2000">2000</option>
+                                    <option value="2001" name="year_2001">2001</option>
+                                    <option value="2002" name="year_2002">2002</option>
+                                    <option value="2003" name="year_2003">2003</option>
+                                    <option value="2004" name="year_2004">2004</option>
+                                    <option value="2005" name="year_2005">2005</option>
+                                    <option value="2006" name="year_2006">2006</option>
+                                    <option value="2007" name="year_2007">2007</option>
+                                    <option value="2008" name="year_2008">2008</option>
+                                    <option value="2009" name="year_2009">2009</option>
+                                    <option value="2010" name="year_2010">2010</option>
+                                    <option value="2011" name="year_2011">2011</option>
+                                    <option value="2012" name="year_2012">2012</option>
+                                    <option value="2013" name="year_2013">2013</option>
+                                    <option value="2014" name="year_2014">2014</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="title">Веб-сайт</div>
+                            <div class="desc">Если у вас есть сайт, вы можете указать его в этом поле</div>
+                        </td>
+                        <td>
+                            <input type="text" name="website">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="title">Описание</div>
+                            <div class="desc">Расскажите о деятельности, которой вы занимаетесь</div>
+                        </td>
+                        <td>
+                            <textarea name="about"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="title">Загрузите аватарку</div>
+                            <div class="desc">
+                                Фотография должна быть <b>250x250px</b>.
+                                <br>Максимальный размер фото - <b>1мб</b>
+                            </div>
+                        </td>
+                        <td>
+                            <input onchange="this.parentNode.getElementsByTagName('span')[0].innerHTML=this.files[0].name" type="file" name="avatar" id="avatar" style="visibility: hidden;position:absolute">
+
+                            <span class="blueGradientButton" onclick="$id('avatar').click()">Выберите фотографию</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="title">Загрузите фоновое изображение</div>
+                            <div class="desc">
+                                Фотография должна быть <b>710x220px</b>.
+                                <br>Максимальный размер фото - <b>1мб</b>
+                            </div>
+                        </td>
+                        <td>
+                            <input onchange="this.parentNode.getElementsByTagName('span')[0].innerHTML = this.files[0].name" type="file" name="cover" id="cover" style="visibility: hidden;position:absolute">
+                            <span class="blueGradientButton" onclick="$id('cover').click()">Выберите фотографию</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td> <span class="blueSpecialButton" id="create-button">Создать сообщество!</span> </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <aside id="main-aside">
+            <div class="aside-block">
+                <span class="aside-header">Поможем проекту?</span>
+                <a href="http://pay.webtheory.net/" id="donate-button">Помочь проекту</a>
+            </div>
+            <div class="aside-block">
+                <span class="aside-header">Мы в соц.сетях</span>
+                <ul class="aside-ul aside-social">
+                    <li><a href="https://vk.com/webtheory"><span class="sprite social-media-1 social-media"></span>Вконтакте</a></li>
+                    <li><a href="https://www.facebook.com/webtheory.net"><span class="sprite social-media-2 social-media"></span>Facebook</a></li>
+                    <li><a href="https://plus.google.com/+webtheory"><span class="sprite social-media-3 social-media"></span>Google+</a></li>
+                    <li><a href="https://www.youtube.com/webtheory"><span class="sprite social-media-4 social-media"></span>YouTube</a></li>
+                    <li><a href="https://twitter.com/webtheorynet"><span class="sprite social-media-5 social-media"></span>twitter</a></li>
+                </ul>
+            </div>
+            <footer class="common-footer">
+                <span><a href="index.html">webtheory.net</a> © 2014</span>
+                <ul>
+                    <li><a href="terms.html">Правила</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </footer>
+        </aside>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <script src="static/js/common.js"></script>
+    <script>
+        Dropdown("#category");
+
+        Dropdown("#hub-date__day");
+        Dropdown("#hub-date__month");
+        Dropdown("#hub-date__year");
+    </script>
+</body>
+</html>

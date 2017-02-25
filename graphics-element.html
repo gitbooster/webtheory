@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Редизайн статей</title>
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="icon" type="image/png" href="static/img/favicon.png">
+    <meta name="description" content="webtheory - проект, посвященный бесплатному онлайн образованию в сфере веб-разработок и веб-дизайна.">
+    <meta name="keywords" content="webtheory,веб-разработка,веб-дизайн,образование,курсы,онлайн,бесплатно">
+    <noscript><meta http-equiv="refresh" content="0; URL=badbrowser"></noscript>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1><a href="index.html"><span class="logo"></span></a></h1>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="landing.html">Знакомство</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li class="active"><a href="graphics.html">Графика</a></li>
+                    <li><a href="people.html">Люди</a></li>
+                    <li><a href="hubs.html">Сообщества</a></li>
+                </ul>
+                <ul class="header-nav-right">
+                    <li><a href="landing.html#invite">Получить приглашение</a></li>
+                    <li><a href="landing.html#auth">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="subnav">
+        <div class="wrapper">
+            <div class="subwrapper">
+                <ul id="category-switcher">
+                    <li data-section="#" class="active">Все</li>
+                    <li data-section="templates">Шаблоны</li>
+                    <li data-section="psd">PSD</li>
+                    <li data-section="vector">Векторная</li>
+                    <li data-section="ui">UI</li>
+                    <li data-section="logotypes">Логотипы</li>
+                    <li data-section="icons">Иконки</li>
+                    <li data-section="illustrations">Иллюстрации</li>
+                    <li data-section="images">Изображения</li>
+                </ul>
+                <ul id="category-order">
+                    <li data-order="popularity" class="active">Лучшее</li>
+                    <li data-order="latest">Новое</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div id="content">
+            <div class="graphics-full">
+                <div class="graphics-image" style="background: url(static/upload/graphics/graphics-element_full.png) center top">
+                    <div class="resize" id="resize-image">развернуть</div>
+                </div>
+
+                <h3 class="graphics-title">
+                    Редизайн статей
+                    <a href="#" rel="author">Никита Архипов</a>
+                </h3>
+
+                <div class="graphics-description">
+                    Решил сделать редизайн статей, потому что то, что есть сейчас читать неудобно, особенно пользователям windows.<br>
+                    <br>
+                    Выкладываю эту работу сюда с целью узнать ваше мнение, поэтому буду рад услышать любой отзыв.<br>
+                    <br>
+                    P.S. текстуру можно будет менять, для избранных можно будет загружать свои фотографии / текстуры.<br>
+                    Редактирование статей будет добавлено, как и публикации статей от имени сообщества.
+                </div>
+
+                <div class="article-subinfo">
+                    <span class="article-read blueButton" id="like_button"><a href="#">Мне нравится</a></span>
+
+                    <span class="graphics-download redButton"><a href="#">Скачать архив</a></span>
+
+                    <ul>
+                        <li><span class="sprite ais-1"></span>502</li>
+                        <li><span class="sprite ais-2"></span>12</li>
+                        <li><span class="sprite ais-3"></span><span id="likesSpan">9</span></li>
+                    </ul>
+
+                    <div class="yashare-auto-init" style="float: right;"
+                         data-yashareQuickServices="vkontakte,facebook,twitter,gplus"
+                         data-yashareL10n="ru"
+                         data-yashareTheme="counter"></div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div id="comments">
+                <h3>Комментарии</h3>
+                <div id="comments_ajax">
+                    <div class="comment-block clearfix">
+                        <img alt="" src="static/img/no_avatar_50x50.png">
+                        <div>
+                            <h4><a href="#">woole</a><time>17:14, 07 Мар</time></h4>
+
+                            <span class="comment-text">Почти 6000 :)</span>
+                            <span class="comment-actions"><a class="comment-respond" href="#">Ответить</a></span>
+                        </div>
+                        <a class="comment-like" data-cid="10552" data-type="articles" href="#">Мне нравится <span>3</span></a>
+                    </div>
+
+                    <div class="comment-block clearfix">
+                        <img alt="" src="static/img/no_avatar_50x50.png">
+                        <div>
+                            <h4><a href="#">woole</a><time>17:14, 07 Мар</time></h4>
+
+                            <span class="comment-text">Почти 6000 :)</span>
+                            <span class="comment-actions"><a class="comment-respond" href="#">Ответить</a></span>
+                        </div>
+                        <a class="comment-like no-likes" data-cid="10552" data-type="articles" href="#">Мне нравится</a>
+                    </div>
+
+                    <div class="comment-block clearfix">
+                        <img alt="" src="static/img/no_avatar_50x50.png">
+                        <div>
+                            <h4><a href="#">woole</a><time>17:14, 07 Мар</time></h4>
+
+                            <span class="comment-text">Почти 6000 :)</span>
+                            <span class="comment-actions"><a class="comment-respond" href="#">Ответить</a></span>
+                        </div>
+                        <a class="comment-like no-likes" data-cid="10552" data-type="articles" href="#">Мне нравится</a>
+                    </div>
+
+                    <div class="comment-block clearfix">
+                        <img alt="" src="static/img/no_avatar_50x50.png">
+                        <div>
+                            <h4><a href="#">woole</a><time>17:14, 07 Мар</time></h4>
+
+                            <span class="comment-text">Почти 6000 :)</span>
+                            <span class="comment-actions"><a class="comment-respond" href="#">Ответить</a></span>
+                        </div>
+                        <a class="comment-like no-likes" data-cid="10552" data-type="articles" href="#">Мне нравится</a>
+                    </div>
+
+                    <div class="comment-block clearfix">
+                        <img alt="" src="static/img/no_avatar_50x50.png">
+                        <div>
+                            <h4><a href="#">woole</a><time>17:14, 07 Мар</time></h4>
+
+                            <span class="comment-text">Почти 6000 :)</span>
+                            <span class="comment-actions"><a class="comment-respond" href="#">Ответить</a></span>
+                        </div>
+                        <a class="comment-like no-likes" data-cid="10552" data-type="articles" href="#">Мне нравится</a>
+                    </div>
+
+                    <div class="comment-block clearfix">
+                        <img alt="" src="static/img/no_avatar_50x50.png">
+                        <div>
+                            <h4><a href="#">woole</a><time>17:14, 07 Мар</time></h4>
+
+                            <span class="comment-text">Почти 6000 :)</span>
+                            <span class="comment-actions"><a class="comment-respond" href="#">Ответить</a></span>
+                        </div>
+                        <a class="comment-like no-likes" data-cid="10552" data-type="articles" href="#">Мне нравится</a>
+                    </div>
+
+                    <div class="comment-block clearfix">
+                        <img alt="" src="static/img/no_avatar_50x50.png">
+                        <div>
+                            <h4><a href="#">woole</a><time>17:14, 07 Мар</time></h4>
+
+                            <span class="comment-text">Почти 6000 :)</span>
+                            <span class="comment-actions"><a class="comment-respond" href="#">Ответить</a></span>
+                        </div>
+                        <a class="comment-like no-likes" data-cid="10552" data-type="articles" href="#">Мне нравится</a>
+                    </div>
+
+                    <div class="comment-block clearfix">
+                        <img alt="" src="static/img/no_avatar_50x50.png">
+                        <div>
+                            <h4><a href="#">woole</a><time>17:14, 07 Мар</time></h4>
+
+                            <span class="comment-text">Почти 6000 :)</span>
+                            <span class="comment-actions"><a class="comment-respond" href="#">Ответить</a></span>
+                        </div>
+                        <a class="comment-like no-likes" data-cid="10552" data-type="articles" href="#">Мне нравится</a>
+                    </div>
+
+                    <div class="comment-block clearfix">
+                        <img alt="" src="static/img/no_avatar_50x50.png">
+                        <div>
+                            <h4><a href="#">woole</a><time>17:14, 07 Мар</time></h4>
+
+                            <span class="comment-text">Почти 6000 :)</span>
+                            <span class="comment-actions"><a class="comment-respond" href="#">Ответить</a></span>
+                        </div>
+                        <a class="comment-like no-likes" data-cid="10552" data-type="articles" href="#">Мне нравится</a>
+                    </div>
+                </div>
+
+                <span class="greyButton" data-type="articles" id="show-all-comments">Показать все комментарии</span>
+            </div>
+        </div>
+
+        <aside id="main-aside">
+            <div class="aside-block">
+                <span class="aside-header">Событие от webtheory</span>
+                <a href='http://hackable.webtheory.net/'><img src='static/img/wt.png' alt='Перейти на сайт игры hackable'></a>
+            </div>
+
+            <div class="aside-block">
+                <span class="aside-header">Мы в соц.сетях</span>
+                <ul class="aside-ul aside-social">
+                    <li><a href="https://vk.com/webtheory"><span class="sprite social-media-1 social-media"></span>Вконтакте</a></li>
+                    <li><a href="https://www.facebook.com/webtheory.net"><span class="sprite social-media-2 social-media"></span>Facebook</a></li>
+                    <li><a href="https://plus.google.com/+webtheory"><span class="sprite social-media-3 social-media"></span>Google+</a></li>
+                    <li><a href="https://www.youtube.com/webtheory"><span class="sprite social-media-4 social-media"></span>YouTube</a></li>
+                    <li><a href="https://twitter.com/webtheorynet"><span class="sprite social-media-5 social-media"></span>twitter</a></li>
+                </ul>
+            </div>
+
+            <footer class="common-footer">
+                <span><a href="index.html">webtheory.net</a> © 2014</span>
+                <ul>
+                    <li><a href="terms.html">Правила</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </footer>
+        </aside>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <script src="static/js/common.js"></script>
+    <script src="https://yandex.st/share/share.js"></script>
+
+    <script>
+        ;(function() {
+            $id("resize-image").addEventListener("click", function() {
+                if (this.parentNode.className === "graphics-image") {
+                    this.parentNode.className = "graphics-image full";
+                    this.innerText = "свернуть";
+                } else {
+                    this.parentNode.className = "graphics-image";
+                    this.innerText = "развернуть";
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Cообщества </title>
+    <link rel="stylesheet" href="static/css/common.css?v1-not-minified">
+    <link rel="icon" type="image/png" href="static/img/favicon.png">
+    <meta name="description" content="webtheory - проект, посвященный бесплатному онлайн образованию в сфере веб-разработок и веб-дизайна.">
+    <meta name="keywords" content="webtheory,веб-разработка,веб-дизайн,образование,курсы,онлайн,бесплатно">
+    <noscript><meta http-equiv="refresh" content="0; URL=badbrowser.html"></noscript>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1><a href="index.html"><span class="logo"></span></a></h1>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="landing.html">Знакомство</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li><a href="graphics.html">Графика</a></li>
+                    <li><a href="people.html">Люди</a></li>
+                    <li class="active"><a href="hubs.html">Сообщества</a></li>
+                </ul>
+                <ul class="header-nav-right">
+                    <li><a href="landing.html#invite">Получить приглашение</a></li>
+                    <li><a href="landing.html#auth">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="subnav">
+        <div class="wrapper">
+            <div class="subwrapper">
+                <ul id="category-switcher">
+                    <li><a href="hubs.html" class="active">Все сообщества</a></li>
+                    <li><a href="hubs_create.html">Создать сообщество</a></li>
+                </ul>
+                <ul id="category-order">
+                    <li data-order="latest">Последние</li>
+                    <li data-order="popular" class="active">Популярные</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div id="content">
+            <div class="hubs-list">
+                <div class="hub-mini-wrapper">
+                    <div class="hub-mini" style="background-image: linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.5) 95%), url(static/upload/hubs/webtheory_250.png)" onclick="location.href='hub.html'">
+                        <div class="hub-full-name">
+                            <h2 class="official"><a href="hub.html">webtheory</a></h2>
+                            <div>872 подписчика</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hub-mini-wrapper">
+                    <div class="hub-mini" style="background-image: linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.5) 95%), url(static/upload/hubs/phpdev_250.png)" onclick="location.href='hub.html'">
+                        <div class="hub-full-name">
+                            <h2><a href="hub.html">PHP-программисты</a></h2>
+                            <div>334 подписчика</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hub-mini-wrapper">
+                    <div class="hub-mini" style="background-image: linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.5) 95%), url(static/upload/hubs/designclub_250.png)" onclick="location.href='hub.html'">
+                        <div class="hub-full-name">
+                            <h2><a href="hub.html">Клуб дизайнеров</a></h2>
+                            <div>205 подписчика</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hub-mini-wrapper">
+                    <div class="hub-mini" style="background-image: linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.5) 95%), url(static/upload/hubs/jsdev_250.png)" onclick="location.href='hub.html'">
+                        <div class="hub-full-name">
+                            <h2><a href="hub.html">JavaScript</a></h2>
+                            <div>405 подписчика</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hub-mini-wrapper">
+                    <div class="hub-mini" style="background-image: linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.5) 95%), url(static/upload/hubs/phpdev_250.png)" onclick="location.href='hub.html'">
+                        <div class="hub-full-name">
+                            <h2><a href="hub.html">PHP-юмор</a></h2>
+                            <div>256 подписчика</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hub-mini-wrapper">
+                    <div class="hub-mini" style="background-image: linear-gradient(to bottom, transparent 45%, rgba(0,0,0,0.5) 95%), url(static/upload/hubs/webtheory_250.png)" onclick="location.href='hub.html'">
+                        <div class="hub-full-name">
+                            <h2><a href="hub.html">Education</a></h2>
+                            <div>1596 подписчика</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span id="showMore" data-count="9" class="greyButton">Показать больше</span>
+        </div>
+        <aside id="main-aside">
+            <div class="aside-block">
+                <span class="aside-header">Событие от webtheory</span>
+                <a href='http://hackable.webtheory.net/'>
+                    <img src='static/img/wt.png' alt='Перейти на сайт игры hackable'>
+                </a>
+            </div>
+
+            <div class="aside-block">
+                <span class="aside-header">Мы в соц.сетях</span>
+                <ul class="aside-ul aside-social">
+                    <li><a href="https://vk.com/webtheory"><span class="sprite social-media-1 social-media"></span>Вконтакте</a></li>
+                    <li><a href="https://www.facebook.com/webtheory.net"><span class="sprite social-media-2 social-media"></span>Facebook</a></li>
+                    <li><a href="https://plus.google.com/+webtheory"><span class="sprite social-media-3 social-media"></span>Google+</a></li>
+                    <li><a href="https://www.youtube.com/webtheory"><span class="sprite social-media-4 social-media"></span>YouTube</a></li>
+                    <li><a href="https://twitter.com/webtheorynet"><span class="sprite social-media-5 social-media"></span>twitter</a></li>
+                </ul>
+            </div>
+
+            <footer class="common-footer">
+                <span><a href="index.html">webtheory.net</a> © 2014</span>
+                <ul>
+                    <li><a href="terms.html">Правила</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </footer>
+        </aside>
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>
